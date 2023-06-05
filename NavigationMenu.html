@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        header{
+            margin: 12px 5px;
+            padding: auto;
+        }
+        .navbar {
+            background-color: #088f7a;
+            border-radius: 10px;
+            padding:  1px 10px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            /*when we use float then the backgorund color is removed from the navigation.To keep that color we used the overflow*/
+        }
+
+        .navbar li {
+            /* margin: 5px 15px;
+            padding: 1px 5px; */
+            /*padding = top right bottom left */
+            padding-top: 5px;
+            padding-right: 25px;
+            float: left;
+            list-style: none;
+            /*To remove the bullets*/
+            font-family:  'Roboto Slab', serif;   
+        }
+        
+        .navbar li a {
+            padding: 20px 13px 0px 0px;
+            text-decoration: none;
+            color: rgb(0, 224, 15);
+            font-weight: 200;
+            font-size: larger;
+        }
+
+        .search{
+            float: right;
+            color: white;
+            /* margin: 10px; */
+            padding: 5px 25px;   
+            /* margin-left: auto; */
+        }
+
+        /* To center the text inside the search box */
+        .navbar input{
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="https://www.google.com">Home</a> </li>
+                <li> <a href=""> About</a></li>
+                <li> <a href="">Services</a></li>
+                <li> <a href="">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="Search" id="search" placeholder="Search anything">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
